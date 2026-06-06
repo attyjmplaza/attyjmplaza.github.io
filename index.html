@@ -27,6 +27,28 @@
             box-shadow: 0 4px 12px rgba(80, 200, 120, 0.2);
         }
         
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            margin: 0 auto 1.5rem;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+            object-fit: cover;
+            animation: slideDown 0.6s ease-out;
+        }
+        
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
         header h1 {
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
@@ -168,6 +190,12 @@
         }
         
         @media (max-width: 600px) {
+            .profile-photo {
+                width: 120px;
+                height: 120px;
+                margin: 0 auto 1rem;
+            }
+            
             header h1 {
                 font-size: 1.8rem;
             }
@@ -194,6 +222,7 @@
 </head>
 <body>
     <header>
+        <img src="https://avatars.githubusercontent.com/u/86936087?v=4" alt="Atty. Jose Mari S. Plaza Profile Photo" class="profile-photo">
         <h1>Atty. Jose Mari S. Plaza, R.E.B.</h1>
         <p>AML/CTPF Lawyer | Real Estate Broker</p>
     </header>
@@ -201,7 +230,7 @@
         <section>
             <h2><i class="fas fa-user-circle"></i> About Me</h2>
             <p>
-                Hello! I'm Atty. JM Plaza. Welcome to my personal website. I'm a dedicated legal professional specializing in Anti-Money Laundering compliance and real estate law. Here, you can learn more about me, my work, and how to contact me.
+                Hello! I'm Atty. JM Plaza. Welcome to my personal website. I'm a dedicated legal professional specializing in Anti-Money Laundering compliance and real estate law. Here, you can l[...]
             </p>
         </section>
         <section>
