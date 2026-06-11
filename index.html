@@ -190,6 +190,39 @@
             color: #40916C;
         }
         
+        .resources-section {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #ecf0f1;
+        }
+        
+        .resources-list {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .resource-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.25rem;
+            background: #f8f9fa;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+        
+        .resource-link:hover {
+            background: #e9ecef;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 8px rgba(45, 106, 79, 0.15);
+        }
+        
+        .resource-link i {
+            font-size: 1.1rem;
+        }
+        
         @media (max-width: 600px) {
             .profile-photo {
                 width: 120px;
@@ -217,6 +250,14 @@
             .cta-btn {
                 padding: 0.85rem 2rem;
                 font-size: 0.95rem;
+            }
+            
+            .resources-list {
+                flex-direction: column;
+            }
+            
+            .resource-link {
+                width: 100%;
             }
         }
     </style>
@@ -263,6 +304,16 @@
     </main>
     <footer>
         &copy; 2025 Atty. JM Plaza. Powered by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+        <div class="resources-section">
+            <div class="resources-list">
+                <a href="https://u.pcloud.link/publink/show?code=kZ3Qpq5ZCU61rCD2Bof8F38BT8gbNjjVeQoX" target="_blank" class="resource-link">
+                    <i class="fas fa-cloud"></i> Cloud Storage
+                </a>
+                <a href="https://github.com/attyjmplaza/attyjmplaza.github.io" target="_blank" class="resource-link">
+                    <i class="fab fa-github"></i> Repository
+                </a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
